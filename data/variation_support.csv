@@ -1,0 +1,9 @@
+rid,days,draws,index_supported,J_supported,G_supported,joint_supported,m_supported,H_zero_field_supported,H_zero_fraction_all_draws,H_zero_fraction_supported_fields,cap_active_draws,observed_day_field_supported,LODO_field_supported,reason
+r1,9,2000,2000,2000,2000,2000,2000,0,0,0,51,7,9,
+r13,8,2000,2000,2000,2000,2000,2000,0,0,0,8,7,8,
+r15,8,2000,2000,2000,2000,2000,1817,183,0.091499999999999998,0.091499999999999998,0,8,8,
+r16,8,2000,2000,2000,2000,2000,193,1807,0.90349999999999997,0.90349999999999997,0,8,8,
+r17,9,2000,2000,2000,2000,2000,2000,0,0,0,0,7,9,
+r18,9,2000,2000,2000,2000,2000,2000,0,0,0,10,7,9,
+r19,4,0,,,,,,,,,,4,4,four_day_descriptive_policy
+r20,9,2000,2000,2000,2000,2000,2000,0,0,0,0,6,9,

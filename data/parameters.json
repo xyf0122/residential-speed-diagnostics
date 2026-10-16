@@ -1,0 +1,28 @@
+{
+  "nu": 13.277777777777779,
+  "nu_mph": 29.701542988944567,
+  "omega": 11.176,
+  "alpha": 1.2179613917131893,
+  "beta": 1.398094303835679,
+  "grid_points_per_fit": 101,
+  "mph_to_model_m_s": 0.44704,
+  "joint_scale_multiplier": 1.609344,
+  "primary_trim": 0.05,
+  "field_bin_width_model_m": 7.62,
+  "minimum_fitted_span_model_m": 30.48,
+  "bin_width": 7.62,
+  "min_bin_tracks": 30,
+  "recovery_min_origin_tracks": 60,
+  "recovery_gain_mps": 1.34112,
+  "fit_min_positions": 12,
+  "fit_min_span": 30.48,
+  "max_gap_s": 2,
+  "degree": 3,
+  "negative_tolerance": 1e-10,
+  "normalization_quantile": 0.95,
+  "trims": [
+    0,
+    0.05,
+    0.1
+  ]
+}

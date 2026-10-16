@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Please cite the associated study when using these derived summaries."
+title: "Safety-oriented self-enforcement index for residential stop control: A kinematic theory and its implications for automated vehicle speed planning"
+type: software
+version: 0.1.0
+authors:
+  - family-names: Xu
+    given-names: Yifan
+  - family-names: Li
+    given-names: Zhixia
+  - family-names: Kluger
+    given-names: Robert
+  - family-names: Wei
+    given-names: Heng
+  - family-names: Chen
+    given-names: Chen
+  - family-names: Ahmed
+    given-names: Mohamed M.
+  - family-names: Liu
+    given-names: Chenxi
+  - family-names: Zhang
+    given-names: Guohui
+url: "https://github.com/xyf0122/residential-speed-diagnostics"
