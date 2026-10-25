@@ -24,8 +24,6 @@ See `docs/data_dictionary.md` for schemas, units and eligibility. The package in
 
 The display code retains the Python/Matplotlib and R/ggplot2/patchwork implementations used for the approved analytical graphics. Python prefers installed Arial and falls back to DejaVu Sans. R uses Arial with the macOS Quartz device when available and otherwise Helvetica with the standard PDF device; `AAP_FONT` can select another installed compatible font. Fonts are not distributed. Font and runtime differences can change typography and PDF bytes; scientific values and encodings are the reproduction target.
 
-OpenAI ChatGPT and Codex assisted with code development, verification and visualization programming. This note describes assistance and does not claim independent scientific replication or human-only development.
-
 ## Citation and licensing
 
 See `CITATION.cff` for the study title and authors. This repository accompanies the study named in the citation file. A code and derived-data license has not yet been assigned. Obtain the rights holder's terms before redistribution or reuse; the package does not grant a license by implication.
