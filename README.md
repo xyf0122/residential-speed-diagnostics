@@ -1,10 +1,21 @@
 # Local-window speed diagnostics: reproducibility data and code
 
-This package reproduces eleven analytical table datasets and Figures 4–7 and B.1 from previously computed, non-record-level summaries for the study of residential speed reachability and spatial exceedance. The field inventory, maps, photographs and worked native-record example are excluded.
+The code reproduces the analytical displays for the second revision of *Safety-oriented self-enforcement index for residential stop control*. It uses aggregate summaries from eight residential radar acquisitions in St. Matthews, Kentucky. Each profile uses the retained support of its own sensor window. Comparing physical positions across windows requires registration to the roadway.
+
+| Manuscript display | Output |
+| --- | --- |
+| Figure 4 | Local observation domains and retained support |
+| Figure 5 | Conditional stop-to-stop reachability schematic |
+| Figure 6 | Spatial 85th-percentile speed profiles |
+| Figure 7 | Exceedance extent, severity and average excess |
+| Figure 8 | Acceleration gradient, fitted spans and observation populations |
+| Figure B.1 | Primary and joint-scale scenario estimates |
+| Tables 2–8 and B.1–B.4 | Twelve CSV datasets, including separate files for Table B.4(a) and (b) |
+| Section 5.2 | Fixed-field sensitivity at 20, 25 and 30 mph |
 
 ## Run
 
-Use Python 3.10+ with Matplotlib and R 4.3+ with ggplot2 4.0+, patchwork 1.3+ and jsonlite. Install the Python requirements in your environment; install the three R packages using your usual R package manager. Then run from this directory:
+Use Python 3.10+ with Matplotlib and R 4.3+ with ggplot2 4.0+, patchwork 1.3+ and jsonlite. Install the Python requirements in your environment; install the three R packages using your usual R package manager. Run these commands from this directory with a fresh output directory:
 
 ```sh
 python src/reproduce.py --out output
@@ -12,13 +23,13 @@ python tests/check_outputs.py --out output
 Rscript tests/check_r_marks.R data output
 ```
 
-`--rscript` selects an Rscript executable. All products go to the chosen output directory: eleven CSV tables, five PDF figures and scientific mark records used by the checks. Table CSVs reproduce reported cell precision and named columns; full-precision saved summaries are provided separately. The r19 table retains the manuscript's two-subset orientation.
+`--rscript` selects an Rscript executable. The command writes table CSVs, six PDF figures and the values used by the plotting checks under `output/`.
 
 ## Interpretation
 
-This is summary-to-display reproduction. It does not reconstruct restricted trajectories, estimate fields or fits, select new recovery features, or repeat bootstrap sampling. Conditional speed values use the declared joint speed–distance measurement model. Local coordinates and fitted spans are model metres; G is model s^-2, and J is dimensionless. The index describes the representative field, not individual-vehicle compliance or crash risk. The common-scale scenario changes speed and distance together by exactly 1.609344 with fixed numerical references.
+The schematic shows how acceleration and braking distances determine whether a selected speed is reachable for specified endpoint states and motion limits. The radar summaries describe observed-window exceedance under a conditional measurement model. The study uses 25 mph as a common analytical objective. At 30 mph the primary percentile fields have zero positive exceedance, but the objective is above the retained reference of about 29.70 mph, so the index is undefined. Table B.4 compares the full field with the accepted-fit field on identical bins **within** r15 and **within** r16. Roughness describes the reconstructable tracks.
 
-See `docs/data_dictionary.md` for schemas, units and eligibility. The package includes selected acquisition-level summaries and aggregate profiles needed for the reported displays. It excludes individual radar records, vehicle identifiers, individual fits and calendar identities.
+See `docs/data_dictionary.md` for units, eligibility and table mappings. Inputs are acquisition-level summaries and aggregate bin profiles. The reproduction starts after field construction, fitting and bootstrap sampling. The field inventory, photographs, individual radar records, track identifiers, individual fits and calendar dates are outside this release.
 
 ## Rendering and provenance
 

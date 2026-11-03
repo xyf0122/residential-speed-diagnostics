@@ -1,0 +1,5 @@
+acquisition,exclusion_stage,tracks,median_observed_speed_mph,median_observed_span_model_m
+r15,excluded_pre_candidate,2630,1.51,2.10
+r15,excluded_negative_polynomial,143,2.39,95.70
+r16,excluded_pre_candidate,2019,1.55,1.40
+r16,excluded_negative_polynomial,55,2.63,73.00

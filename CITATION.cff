@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite the associated study when using these derived summaries."
 title: "Safety-oriented self-enforcement index for residential stop control: A kinematic theory and its implications for automated vehicle speed planning"
 type: software
-version: 0.1.0
+version: 0.2.0
 authors:
   - family-names: Xu
     given-names: Yifan
